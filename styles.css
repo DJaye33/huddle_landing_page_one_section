@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("/images/bg-mobile.svg");
+  background-color: #684bb1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #fff;
+  text-rendering: optimizeLegibility;
+  padding: 2.25em;
+}
+
+nav img {
+  width: 7.5em;
+}
+
+.main {
+  text-align: center;
+  margin-top: 3.25em;
+}
+
+figure img {
+  width: 100%;
+}
+
+.register {
+  margin-top: 3.75em;
+}
+
+.register h1,
+.register button {
+  font-family: "Poppins", sans-serif;
+}
+
+.register p {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 1em;
+}
+
+.register button {
+  margin-top: 1.5em;
+  color: #684bb1;
+  padding: 0.75em 4.6875em;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+  border-radius: 1.5625em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.register button:hover {
+  color: #fff;
+  background-color: #e880e8;
+}
+
+.register button:active {
+  box-shadow: 0 5px rgba(0, 0, 0, 0.269022);
+  transform: translateY(4px);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 9em;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 2.25em;
+  width: 2.25em;
+  transition: 0.2s;
+}
+
+.icon:hover {
+  cursor: pointer;
+  color: #e880e8;
+  border: 2px solid #e880e8;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("/images/bg-desktop.svg");
+    background-size: cover;
+    padding: 5.3125em;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  nav img {
+    width: 12.5em;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5em;
+  }
+
+  figure {
+    width: 55%;
+  }
+
+  .register {
+    width: 41%;
+    text-align: left;
+  }
+
+  .register h1 {
+    font-size: 2.5rem;
+  }
+
+  .register p {
+    font-size: 1.125rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: initial;
+    margin-top: initial;
+  }
+}
